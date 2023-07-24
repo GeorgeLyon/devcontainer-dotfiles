@@ -30,7 +30,7 @@ autoload -U colors && colors
 
 # Prompt
 PROMPT="
-🤖 %B%{$fg[green]%}devcontainer ${HOSTNAME}%{$reset_color%}%b
+🤖 %B%{$fg[green]%}${HOSTNAME}%{$reset_color%}%b
 📁 %~
 🔸 "
 
