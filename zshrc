@@ -25,9 +25,12 @@ autoload -Uz compinit && compinit
 ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd history completion)
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Colors
+autoload -U colors && colors
+
 # Prompt
 PROMPT="
-🤖 %B%{$fg[green]%}devcontainer-${HOSTNAME}%{$reset_color%}%b
+🤖 %B%{$fg[green]%}devcontainer ${HOSTNAME}%{$reset_color%}%b
 📁 %~
 🔸 "
 
