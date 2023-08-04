@@ -11,3 +11,14 @@ git clone \
   ~/.zsh/zsh-autosuggestions
 
 cp -R "$SCRIPT_DIR/zshrc" ~/.zshrc
+
+mkdir -p ~/.ssh
+cat << EOF > ~/.ssh/config
+Host gh github github.com
+ User git
+ HostName github.com
+
+Host gl gitlab gitlab.com
+ User git
+ HostName gitlab.com
+EOF
