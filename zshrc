@@ -32,5 +32,5 @@ autoload -U colors && colors
 PROMPT="
 🤖 %B%{$fg[green]%}devcontainer: ${LOCAL_WORKSPACE_FOLDER}%{$reset_color%}%b
 📁 %~
-🔸 "
+> "
 
