@@ -34,9 +34,7 @@ if [[ -z "${LOCAL_WORKSPACE_FOLDER}" ]]; then
 else
   DEVCONTAINER_PROMPT_FRAGMENT="devcontainer: ${LOCAL_WORKSPACE_FOLDER}"
 fi
-
 PROMPT="
 🤖 %B%{$fg[green]%}$DEVCONTAINER_PROMPT_FRAGMENT%{$reset_color%}%b
 📁 %~
 > "
-
