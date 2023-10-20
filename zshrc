@@ -29,8 +29,14 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 autoload -U colors && colors
 
 # Prompt
+if [[ -z "${LOCAL_WORKSPACE_FOLDER}" ]]; then
+  DEVCONTAINER_PROMPT_FRAGMENT="devcontainer"
+else
+  DEVCONTAINER_PROMPT_FRAGMENT="devcontainer: ${LOCAL_WORKSPACE_FOLDER}"
+fi
+
 PROMPT="
-🤖 %B%{$fg[green]%}devcontainer: ${LOCAL_WORKSPACE_FOLDER}%{$reset_color%}%b
+🤖 %B%{$fg[green]%}$DEVCONTAINER_PROMPT_FRAGMENT%{$reset_color%}%b
 📁 %~
 > "
 
