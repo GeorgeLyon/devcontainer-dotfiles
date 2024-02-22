@@ -3,6 +3,7 @@
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 DEBIAN_FRONTEND="noninteractive" \
+  apt-get update && \
   apt-get install -y \
     zsh git
 
